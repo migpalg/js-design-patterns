@@ -22,5 +22,5 @@ class SquareToRectangleAdapter {
   }
 }
 
-let sq = new Square(11);
-area(new SquareToRectangleAdapter(sq));
+// let sq = new Square(11);
+// area(new SquareToRectangleAdapter(sq));
