@@ -3,9 +3,11 @@ const FoodLogger = require("./foodLogger");
 foodLogger = new FoodLogger().getFoodLoggerSingleton();
 
 class Restaurant {
+  quantity
+  #food
   constructor(inventory) {
     this.quantity = inventory.count;
-    this.food = inventory.foodItem;
+    this.foodsss = inventory.foodItem;
     foodLogger.log(inventory);
   }
 }

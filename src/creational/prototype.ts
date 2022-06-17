@@ -18,6 +18,7 @@ class Circle extends Shape {
   radius: number = 0;
 
   constructor(target?: Circle) {
+    console.log("target", target);
     super(target);
 
     if (target) {
@@ -30,7 +31,7 @@ class Circle extends Shape {
   }
 }
 
-function main() {
+function main2() {
   const circleOne = new Circle();
   circleOne.radius = 10;
   circleOne.x = 0;
@@ -44,4 +45,4 @@ function main() {
   console.log(circleTwo);
 }
 
-main();
+main2();
