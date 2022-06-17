@@ -1,0 +1,14 @@
+coverage
+dist
+node_modules
+
+webpack.config.js
+yarn.lock
+tsconfig.json
+README.md
+package.json 
+jest.config.ts
+.prettierrc
+.gitignore
+.eslintrc.json
+.babelrc
