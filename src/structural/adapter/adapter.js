@@ -1,14 +1,14 @@
-class Square {
+export class Square {
   constructor(side) {
     this.side = side;
   }
 }
 
-function area(rectangle) {
+export function area(rectangle) {
   return rectangle.width * rectangle.height;
 }
 
-class SquareToRectangleAdapter {
+export class SquareToRectangleAdapter {
   constructor(square) {
     this.square = square;
   }

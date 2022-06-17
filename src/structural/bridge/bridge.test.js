@@ -1,11 +1,13 @@
-describe("bridge", function () {
-  it("render vector square", function () {
+import { Square, Triangle, VectorRenderer, RasterRenderer } from './bridge';
+
+describe('bridge', function () {
+  it('render vector square', function () {
     let sq = new Square(new VectorRenderer());
-    expect(sq.toString()).toEqual("Drawing square as lines");
+    expect(sq.toString()).toEqual('Drawing square as lines');
   });
 
-  it("render raster triangle", function () {
+  it('render raster triangle', function () {
     let sq = new Triangle(new RasterRenderer());
-    expect(sq.toString()).toEqual("Drawing triangle as pixels");
+    expect(sq.toString()).toEqual('Drawing triangle as pixels');
   });
 });

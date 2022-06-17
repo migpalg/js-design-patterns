@@ -51,28 +51,26 @@ class Shape {
   }
 }
 
-class Triangle extends Shape {
+export class Triangle extends Shape {
   constructor(renderer) {
-    super(renderer, "triangle");
+    super(renderer, 'triangle');
   }
 }
 
-class Square extends Shape {
+export class Square extends Shape {
   constructor(renderer) {
-    super(renderer, "square");
+    super(renderer, 'square');
   }
 }
 
-class RasterRenderer {
+export class RasterRenderer {
   get whatToRenderAs() {
-    return "pixels";
+    return 'pixels';
   }
 }
 
-class VectorRenderer {
+export class VectorRenderer {
   get whatToRenderAs() {
-    return "lines";
+    return 'lines';
   }
 }
-
-
